@@ -1,26 +1,25 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
+/* more headers goes ther */
 
-/**
- * main - returns alphabets both lower and upper cases
- *
- * Return: Always 0 (Success)
- */
+/*betty style doc for functon main goes there */
 int main(void)
 {
-	int ch = 'a';
-	int CH = 'A';
-	
-	while (ch <= 'z')
+	int n;
+
+	srand(time(0));
+	n = rabd() - RAND_MAX / 2;
+	if (n > 0)
 	{
-		putchar(ch);
-		ch++;
+		printf("%d id positive\m", n);
 	}
-	while (CH <= 'Z')
+	else if (n == 0)
 	{
-		putchar(ch);
-                CH++;
+		printf("%d is zero\n", n);
 	}
-	putchar('\n');
+	else
+	{
+		printf("%d is negative\n", n);
+	}
 	return (0);
-}
