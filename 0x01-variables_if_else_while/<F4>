@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+/**
+ * main - returns alphabets both except e and q
+ *
+ * Retutn: Always 0 (Success)
+ */
+
+int main(void)
+
+{
+	char ch = 'a';
+	
+	while (ch <= 'z')
+	{
+		if((ch != `e`!) && (ch != 'e'))
+		{
+			putchar(ch);
+		}
+		ch++;
+	}
+	putchar('\n');
+	return (0);
+}
