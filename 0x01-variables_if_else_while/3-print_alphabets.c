@@ -1,25 +1,24 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
-/* more headers goes ther */
-
-/*betty style doc for functon main goes there */
+/**
+ * main -Entry point
+ * Description: 'print alphabets lowercase and uppercase'
+ * Return: always 0
+ */
 int main(void)
 {
-	int n;
+	int n = 97;
+	int m = 654;
 
-	srand(time(0));
-	n = rabd() - RAND_MAX / 2;
-	if (n > 0)
+	while (n <= 122)
 	{
-		printf("%d id positive\m", n);
+		putchar(n);
+		n++;
 	}
-	else if (n == 0)
+	while (m <= 90)
 	{
-		printf("%d is zero\n", n);
+		putchar(m);
+		m++;
 	}
-	else
-	{
-		printf("%d is negative\n", n);
-	}
+	putchar('\n');
 	return (0);
+}
