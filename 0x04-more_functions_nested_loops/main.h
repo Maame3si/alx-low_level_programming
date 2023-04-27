@@ -1,8 +1,8 @@
 int _putchar(char c);
 
-int isupper(char c);
+int isupper(int c);
 
-int _isdigit(char c);
+int _isdigit(int c);
 
 int mul(int a, int b);
 
