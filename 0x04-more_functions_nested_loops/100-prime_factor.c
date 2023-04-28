@@ -2,7 +2,7 @@
 #include <math.h>
 
 /**
- * main - Print the largest prime factor of the number 612852475143
+ * main - Prints the largest prime factor of the number 612852475143
  * Return: Always 0 (Success)
  */
 
@@ -23,4 +23,6 @@ int main(void)
 	}
 	printf("%ld\n", maxf);
 	return (0);
+
 }
+
