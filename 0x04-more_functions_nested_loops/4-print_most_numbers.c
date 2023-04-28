@@ -9,7 +9,6 @@
 void print_most_numbers(void)
 
 {
-
 	int x = 0;
 
 	for (; x <= 9; x++)
@@ -20,7 +19,7 @@ void print_most_numbers(void)
 	}
 	else
 	{
-	_putchar(x + '');
+	_putchar(x + '0');
 	}
 	}
 	_putchar('\n');
