@@ -7,7 +7,7 @@
  * Return: the int converted from the string
  */
 
-int_atoi(char *s)
+int _atoi(char *s)
 
 {
 	int i, d, n, len, f, digit;
@@ -23,7 +23,7 @@ int_atoi(char *s)
 		len++;
 	while (i < len && f == 0)
 	{
-		if ([i] == '-')
+		if (s[i] == '-')
 			++d;
 
 		if (s[i] >= '0' && s[i] <= '9')
